@@ -1,5 +1,5 @@
-ARG DOTNET_VERSION="8.0"
-ARG NODE_VERSION="22"
+ARG DOTNET_VERSION="8.0" \
+    NODE_VERSION="22"
 
 FROM debian AS latest
 
@@ -11,8 +11,7 @@ USER root
 ENV LANG=C.UTF-8 \
     LC_ALL=C.UTF-8
 
-RUN apt update \
-    && apt-get update
+RUN apt update
 
 # git
 RUN apt install -y git \
@@ -42,12 +41,12 @@ RUN apt install fzf \
 # dotnet
 ENV DOTNET_EnableWriteXorExecute=0 \
     DOTNET_CLI_TELEMETRY_OPTOUT=1
-RUN apt-get -y install libicu-dev \
+RUN apt -y install libicu-dev \
     && wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
     && dpkg -i packages-microsoft-prod.deb \
     && rm packages-microsoft-prod.deb \
-    && apt-get update \
-    && apt-get install -y dotnet-sdk-$DOTNET_VERSION
+    && apt update \
+    && apt install -y dotnet-sdk-$DOTNET_VERSION
 
 # install node using nvm
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash \
