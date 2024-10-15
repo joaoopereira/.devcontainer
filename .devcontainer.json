@@ -2,7 +2,9 @@
     "image": "joaoopereira/devcontainer",
     "runArgs": [
         "--name",
-        "joaoopereira-devcontainer"
+        "joaoopereira-devcontainer",
+        "--hostname",
+        "devcontainer"
     ],
     // create file and folder that will be used later on by the devcontainer
     // this is required to persist data
