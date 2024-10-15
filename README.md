@@ -1,18 +1,20 @@
 # joaoopereira/devcontainer
 
-Welcome to the my DevContainer Project! This repository contains the configuration and setup for my development container environment.
+# 🎉 Welcome to My DevContainer Project! 🎉
 
-## Overview
+This repository contains the configuration and setup for my development container environment.
 
-This project aims to provide a consistent and reproducible development environment using Docker containers. By using a dev container, I can ensure the same development setup independent on my machine or Operating system.
+## 🌟 Overview
 
-## Features
+This project aims to provide a consistent and reproducible development environment using Docker containers. By using a dev container, I can ensure the same development setup independent of my machine or operating system.
+
+## ✨ Features
 
 - **Consistent Development Environment**: Ensures all my machines use the same tools and dependencies.
 - **Isolation**: Keeps my development environment isolated from your local machine.
 - **Reproducibility**: Easily recreate the development environment on any machine.
 
-## Getting Started
+## 🚀 Getting Started
 
 To get started with this project, follow these steps:
 
@@ -27,22 +29,21 @@ To get started with this project, follow these steps:
 3. **Build and Run**:
     The container will automatically build and start. You can now start developing within the container.
 
-## Requirements
+## 📋 Requirements
 
 - [Docker](https://www.docker.com/get-started)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Remote - Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-## Contributing
+## 🤝 Contributing
 
 We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
 
-## License
+## 📜 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## Contact
+## 📬 Contact
 
-For any questions or feedback, please open an issue on this repository or contact the maintainer at [your-email@example.com].
+For any questions or feedback, please open an issue on this repository or contact the maintainer at [mail@joaoopereira.com].
 
-Happy Coding!
