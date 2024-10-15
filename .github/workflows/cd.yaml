@@ -27,7 +27,7 @@ jobs:
           push: true
           target: latest
           platforms: linux/amd64
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/joaoopereira/devcontainer:latest
+          tags: joaoopereira/devcontainer:latest
 
       - name: Build and push next Docker image
         uses: docker/build-push-action@v6
@@ -36,4 +36,4 @@ jobs:
           push: true
           target: next
           platforms: linux/amd64
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/joaoopereira/devcontainer:next
+          tags: joaoopereira/devcontainer:next
