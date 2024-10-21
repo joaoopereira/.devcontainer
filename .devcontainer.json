@@ -1,5 +1,5 @@
 {
-    "image": "joaoopereira/devcontainer",
+    "image": "joaoopereira/devcontainer:next",
     "runArgs": [
         "--name",
         "joaoopereira-devcontainer",
@@ -11,11 +11,10 @@
     "initializeCommand": "touch .bash_history && mkdir -p repos",
     "mounts": [
         "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind,consistency=cached",
-        "source=./.bash_history,target=/root/.bash_history,type=bind,consistency=cached",
-        "source=./,target=/workspaces/devcontainer,type=bind,consistency=cached"
+        "source=./.bash_history,target=/home/developer/.bash_history,type=bind,consistency=cached"
     ],
-    "workspaceFolder": "/workspaces",
-    "workspaceMount": "source=./repos/,target=/workspaces,type=bind,consistency=cached",
+    "workspaceFolder": "/dev",
+    "workspaceMount": "source=./../,target=/dev,type=bind,consistency=cached",
     "customizations": {
         "vscode": {
             "extensions": [
