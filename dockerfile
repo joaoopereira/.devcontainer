@@ -86,3 +86,5 @@ RUN sudo curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-
 
 # testing features
 FROM latest AS next
+
+RUN sudo apt install -y hugo
