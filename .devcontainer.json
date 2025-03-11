@@ -18,7 +18,6 @@
         "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind,consistency=cached",
         "source=./.bash_history,target=/home/developer/.bash_history,type=bind,consistency=cached"
     ],
-    "workspaceFolder": "/workspaces",
     "workspaceMount": "source=./../,target=/workspaces,type=bind,consistency=cached",
     "customizations": {
         "vscode": {
@@ -31,7 +30,8 @@
                 "outofsync42.select-compare-tabs",
                 "earthly.earthfile-syntax-highlighting",
                 "ms-dotnettools.csdevkit",
-                "FullStackSpider.visual-nuget"
+                "FullStackSpider.visual-nuget",
+                "ms-vscode.makefile-tools"
             ]
         }
     }
