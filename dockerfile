@@ -104,3 +104,5 @@ RUN sudo wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION
 
 # testing features
 FROM latest AS next
+
+RUN sudo curl -fsSL https://get.pulumi.com | sh
